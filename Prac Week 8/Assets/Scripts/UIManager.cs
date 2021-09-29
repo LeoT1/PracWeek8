@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scorekeeper = GameObject.Find("ScoreKeeper").GetComponent<ScoreKeeper>();
+        scorekeeper = GameObject.Find("Scorekeeper").GetComponent<ScoreKeeper>();
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         score = scorekeeper.score;
         canvas.gameObject.transform.GetChild(0).GetComponent<Text>().text += score;
@@ -26,7 +26,7 @@ public class UIManager : MonoBehaviour
         if (score < scorekeeper.score)
         {
             score = scorekeeper.score;
-            canvas.gameObject.transform.GetChild(0).GetComponent<Text>().text += score;
+            canvas.gameObject.transform.GetChild(0).GetComponent<Text>().text = "Score: "+ score.ToString();
         }
     }
 }

@@ -8,7 +8,7 @@ public class ScoreKeeper : MonoBehaviour
     public int pointsPerPickUp;
     public int score;
 
-    public void PickUp()
+    public void AddPoints()
     {
         score += pointsPerPickUp; 
     }
