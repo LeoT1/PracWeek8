@@ -16,7 +16,7 @@ public class Coin : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
-            scorekeeper.AddPoints();
+            scorekeeper.hit();
         }
     }
 }

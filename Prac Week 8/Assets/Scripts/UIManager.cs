@@ -16,16 +16,16 @@ public class UIManager : MonoBehaviour
     {
         scorekeeper = GameObject.Find("Scorekeeper").GetComponent<ScoreKeeper>();
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-        score = scorekeeper.score;
+        score = scorekeeper.Score;
         canvas.gameObject.transform.GetChild(0).GetComponent<Text>().text += score;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (score < scorekeeper.score)
+        if (score < scorekeeper.Score)
         {
-            score = scorekeeper.score;
+            score = scorekeeper.Score;
             canvas.gameObject.transform.GetChild(0).GetComponent<Text>().text = "Score: "+ score.ToString();
         }
     }

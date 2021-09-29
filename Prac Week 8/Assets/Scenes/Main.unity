@@ -406,7 +406,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsPerPickUp: 3
-  score: 0
 --- !u!1001 &1767823294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -610,6 +609,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1914029070437129325, guid: ce2a4ab88bfb6834ea668af090afd325, type: 3}
+      propertyPath: m_Text
+      value: 'Score: '
+      objectReference: {fileID: 0}
     - target: {fileID: 6062821599718655095, guid: ce2a4ab88bfb6834ea668af090afd325, type: 3}
       propertyPath: m_Name
       value: UI Manager
