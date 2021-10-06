@@ -18,6 +18,7 @@ public class ScoreKeeper : MonoBehaviour
 
     public int pointsPerPickUp;
     private int score = 0;
+    private int scoreTwo = 0;
 
     public int Score
     {
@@ -27,8 +28,21 @@ public class ScoreKeeper : MonoBehaviour
         }
     }
 
+    public int ScoreTwo
+    {
+        get
+        {
+            return scoreTwo;
+        }
+    }
+
     public void hit()
     {
         score += pointsPerPickUp;
+    }
+
+    public void HitTwo()
+    {
+        scoreTwo += pointsPerPickUp;
     }
 }
